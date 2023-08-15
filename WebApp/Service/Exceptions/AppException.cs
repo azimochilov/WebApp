@@ -1,6 +1,9 @@
-﻿namespace WebApp.Service.Exceptions
+﻿namespace WebApp.Service.Exceptions;
+public class AppException : Exception
 {
-    public class AppException
+    public int Code { get; set; }
+    public AppException(int code = 500, string message = "Something went wrong") : base(message)
     {
+            this.Code = code;
     }
 }
