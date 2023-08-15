@@ -7,5 +7,5 @@ public interface IAuthorService
     ValueTask<AuthorResultDto> ModifyAsync(AuthorUpdateDto dto);
     ValueTask<bool> RemoveAsync(long id);
     ValueTask<AuthorResultDto> RetriveByIdAsync(long id);
-    ValueTask<IEnumerable<AuthorResultDto>> RetriveAllAsync(string search = null);
+    ValueTask<IEnumerable<AuthorResultDto>> RetriveAllAsync();
 }

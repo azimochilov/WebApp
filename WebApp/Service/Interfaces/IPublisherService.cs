@@ -7,7 +7,6 @@ public interface IPublisherService
     ValueTask<PublisherResultDto> AddAsync(PublisherCreationDto dto);
     ValueTask<PublisherResultDto> ModifyAsync(PublisherUpdateDto dto);
     ValueTask<bool> DeleteAsync(long id);
-    ValueTask<IEnumerable<PublisherResultDto>> RetriveAllAsync(string search = null);
+    ValueTask<IEnumerable<PublisherResultDto>> RetriveAllAsync();
     ValueTask<PublisherResultDto> RetriveByIdAsync(long id);
-
 }
