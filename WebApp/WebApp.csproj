@@ -13,7 +13,9 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Service\" />
+    <Folder Include="Service\Services\" />
+    <Folder Include="Service\Interfaces\" />
+    <Folder Include="Service\Mappers\" />
   </ItemGroup>
 
 </Project>
