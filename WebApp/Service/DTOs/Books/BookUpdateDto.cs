@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace WebApp.Service.DTOs.Books;
-public class BookForUpdateDto
+public class BookUpdateDto
 {
     [Required]
     public long Id { get; set; }    
