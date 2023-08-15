@@ -2,5 +2,7 @@
 
 namespace WebApp.Domain.Entities;
 public class Publisher : Auditable
-{     public string Name { get; set; }
+{   
+    public string Name { get; set; }
+
 }
