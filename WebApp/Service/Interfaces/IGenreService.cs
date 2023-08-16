@@ -6,7 +6,7 @@ public interface IGenreService
 {
     ValueTask<GenreResultDto> AddAsync(GenreCreationDto dto);
     ValueTask<GenreResultDto> ModifyAsync(GenreUpdateDto dto);
-    ValueTask<bool> DeleteAsync(long id);
+    ValueTask<bool> RemoveAsync(long id);
     ValueTask<IEnumerable<GenreResultDto>> RetriveAllAsync();
     ValueTask<GenreResultDto> RetriveByIdAsync(long id);
 }
