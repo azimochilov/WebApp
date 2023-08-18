@@ -76,7 +76,7 @@ public class BookService : IBookService
 
     public async ValueTask<BookResultDto> RetriveByIdAsync(long id)
     {
-        var book = await this.repository.SelectAsync(a => a.Equals(id));
+        var book = await this.repository.SelectAsync(a => a.Id == id);
         if (book is null || book.IsDeleted)
         {
             throw new AppException(404, "Book not found");

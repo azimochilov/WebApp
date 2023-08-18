@@ -77,7 +77,7 @@ public class AuthorService : IAuthorService
 
     public async ValueTask<AuthorResultDto> RetriveByIdAsync(long id)
     {
-        var author = await this.repository.SelectAsync(a => a.Equals(id));
+        var author = await this.repository.SelectAsync(a => a.Id == id);
 
         if(author is null || author.IsDeleted)
         {

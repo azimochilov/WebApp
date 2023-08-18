@@ -77,7 +77,7 @@ public class PublisherService : IPublisherService
 
     public async ValueTask<PublisherResultDto> RetriveByIdAsync(long id)
     {
-        var publisher = await this.repository.SelectAsync(a => a.Equals(id));
+        var publisher = await this.repository.SelectAsync(a => a.Id == id);
 
         if (publisher is null || publisher.IsDeleted)
         {
