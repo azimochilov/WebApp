@@ -43,7 +43,7 @@ public class GenreService : IGenreService
         }
 
         var modifiedGenre = this.mapper.Map(dto, genre);
-        modifiedGenre.UpdatedAt = DateTime.Now;
+        modifiedGenre.UpdatedAt = DateTime.UtcNow;
 
         await this.repository.SaveAsync();
 

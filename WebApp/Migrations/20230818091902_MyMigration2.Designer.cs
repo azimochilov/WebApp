@@ -12,8 +12,8 @@ using WebApp.Data.Contexs;
 namespace WebApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230817083624_MyMigration")]
-    partial class MyMigration
+    [Migration("20230818091902_MyMigration2")]
+    partial class MyMigration2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

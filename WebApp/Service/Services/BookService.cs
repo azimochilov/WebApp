@@ -45,7 +45,7 @@ public class BookService : IBookService
         }
 
         var modifiedBook = mapper.Map(dto,book);
-        modifiedBook.UpdatedAt = DateTime.Now;
+        modifiedBook.UpdatedAt = DateTime.UtcNow;
 
         await this.repository.SaveAsync();
 
